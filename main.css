@@ -1,0 +1,90 @@
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(180deg, pink 59%, #9336b0 100%);
+    -webkit-font-smoothing: antialiased;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
+}
+
+body {
+    margin-bottom: 0;
+}
+
+main {
+    background: aliceblue;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 1em 2em 4em;
+}
+
+header {
+   margin: 0 auto;
+   max-width: 864px;
+}
+
+footer {
+   background-color: black;
+   margin: 0 auto;
+   max-width: 864px;
+   min-height: 100px;
+   color: white;
+}
+
+footer p {
+    margin: 0 auto;
+    padding: 32px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: midnightblue;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 32px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    text-decoration: underline 0.1em rgba(0, 0, 0, 0);
+    text-underline-offset: 0.5em;
+    transition: all .3s ease-in-out;
+}
+
+.headericon {
+    float: left;
+    color: #f2f2f2;
+    font-size: 24px;
+    transition: all .3s ease-in-out;
+}
+
+.headericon:hover {
+    transform: scale(1.005);
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: darkslateblue;
+  text-decoration-color: rgba(255, 255, 255, 1);
+  text-underline-offset: 0.3em;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    text-decoration-color: rgba(255, 255, 255, 1); 
+}
+
+.hoverimage img {
+    transition: all .3s ease-in-out; 
+}
+
+.hoverimage img:hover {
+	transform: scale(1.1); 
+}
