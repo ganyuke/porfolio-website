@@ -11,7 +11,7 @@ body {
 }
 
 main {
-    background: aliceblue;
+    background: #f8fcf7;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
     color: #545454;
     font-size: 16px;
@@ -19,6 +19,10 @@ main {
     margin: 0 auto;
     max-width: 800px;
     padding: 1em 2em 4em;
+}
+
+main h1 {
+ color: #00007f;
 }
 
 header {
@@ -41,16 +45,19 @@ footer p {
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: midnightblue;
+  background-color: green;
   overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
+.topnav {
+    height: 96px;
+}
+
 .topnav a {
     float: right;
     color: #f2f2f2;
-    text-align: center;
-    padding: 32px 16px;
+    padding: 38px 16px;
     text-decoration: none;
     font-size: 17px;
     text-decoration: underline 0.1em rgba(0, 0, 0, 0);
@@ -58,20 +65,36 @@ footer p {
     transition: all .3s ease-in-out;
 }
 
-.headericon {
-    float: left;
-    color: #f2f2f2;
-    font-size: 24px;
-    transition: all .3s ease-in-out;
+.topnav h1 {
+    font-size: 32px;
+    margin: 0;
 }
 
-.headericon:hover {
+.topnav h6 {
+    color: #d1d1d1;
+    margin: 0;
+    font-size: 14px;
+    font-style: oblique;
+}
+
+.header {
+    color: #f2f2f2;
+    transition: all .3s ease-in-out;
+    padding: 20px;;
+}
+
+.header img {
+    float: left;
+    margin-right: 15px;
+}
+
+.header img:hover {
     transform: scale(1.005);
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: darkslateblue;
+  background-color: forestgreen;
   text-decoration-color: rgba(255, 255, 255, 1);
   text-underline-offset: 0.3em;
 }
