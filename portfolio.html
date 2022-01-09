@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Portfolio - Ethkwnd</title>
+        <meta name="description" content="The best website in my mind.">
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <!-- stop writing stuff above here smh my head -->
+    <body>
+      <header>
+          <div class="topnav" >
+           <a target="_blank" href="https://github.com/ganyuke/portfolio-website"><img style="vertical-align:middle" src="images/GitHub-Mark-Light-32px.png" width="16" height="16" alt="Github" ></a>
+           <a href="about.html">About</a>
+           <a class="active" href="portfolio.html">Portfolio</a>
+           <a href="index.html">Home</a>
+           <div class="header">
+               <img src="images/poorly_drawn_anemo.png" alt="Poorly drawn Anemo symbol." width="60px" height="60px">
+               <h1>
+               Ethkwnd
+               </h1>
+               <h6>
+                   Throwing ethics to the wind since 2013.
+               </h6>
+          </div>
+          </div>
+          <div class="mobile-nav" >
+            <div class="header">
+                <img src="images/poorly_drawn_anemo.png" alt="Poorly drawn Anemo symbol." width="60px" height="60px">
+                <h1>
+                Ethkwnd
+                </h1>
+           </div>
+           <a href="javascript:void(0);" class="icon" onclick="expandHamburger()">
+             <i class="fa fa-bars"></i>
+           </a>
+            <div id="navigation-links">
+              <a href="index.html">Home</a>
+              <a class="active" href="portfolio.html">Portfolio</a>
+                <a href="about.html">About</a>
+            <a target="_blank" href="https://github.com/ganyuke/portfolio-website">GitHub</a>
+         </div>
+          </div>
+      </header>
+        <main>
+            <h1>Portfolio</h1>
+            <p>
+                Things I have made or worked on.
+            </p>
+            <h2>Photos</h2>
+            <div class="gallery">
+              <a target="_blank" href="images/land1.JPG">
+                <img src="images/land1.JPG" alt="A grassy plains." width="600" height="400">
+              </a>
+              <a target="_blank" href="images/land2.JPG">
+                <img src="images/land2.JPG" alt="A river cutting through marshland." width="600" height="400">
+              </a>
+              <a target="_blank" href="images/land3.JPG">
+                <img src="images/land3.JPG" alt="A close-up of danelions." width="600" height="400">
+              </a>
+              <a target="_blank" href="images/land4.JPG">
+                <img src="images/land4.JPG" alt="A deer and a fawn. " width="600" height="400">
+              </a>
+            </div>
+            <h2>Videos</h2>
+            <p>I never posted them on any video-sharing platform.</p>
+            <h2>Projects</h2>
+            <p>Arduino music player <br><a target="_blank" href="https://github.com/ganyuke/arduino-genshin-ost">Learn more</a>.</p>
+        </main>
+        <footer>
+            <p>© 2022 ganyuke</p>
+        </footer>
+    </body>
+</html>
+
+<script>
+function expandHamburger() {
+  var x = document.getElementById("navigation-links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>

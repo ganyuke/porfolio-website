@@ -5,17 +5,18 @@
         <meta name="description" content="The best website in my mind.">
         <link rel="stylesheet" href="main.css">
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <!-- stop writing stuff above here smh my head -->
     <body>
         <header>
             <div class="topnav" >
-             <a href="https://github.com/ganyuke/portfolio-website"><img style="vertical-align:middle" src="images/GitHub-Mark-Light-32px.png" width="16" height="16" alt="Github logo." ></a>
+             <a target="_blank" href="https://github.com/ganyuke/portfolio-website"><img style="vertical-align:middle" src="images/GitHub-Mark-Light-32px.png" width="16" height="16" alt="Github" ></a>
              <a href="about.html">About</a>
-             <a href="porfolio.html">Porfolio</a>
+             <a href="portfolio.html">Portfolio</a>
              <a class="active" href="index.html">Home</a>
              <div class="header">
-                 <img src="images/poorly_drawn_anemo.png"  width="60px" height="60px">
+                 <img src="images/poorly_drawn_anemo.png" alt="Poorly drawn Anemo symbol." width="60px" height="60px">
                  <h1>
                  Ethkwnd
                  </h1>
@@ -23,6 +24,23 @@
                      Throwing ethics to the wind since 2013.
                  </h6>
             </div>
+            </div>
+            <div class="mobile-nav" >
+              <div class="header">
+                  <img src="images/poorly_drawn_anemo.png" alt="Poorly drawn Anemo symbol." width="60px" height="60px">
+                  <h1>
+                  Ethkwnd
+                  </h1>
+             </div>
+             <a href="javascript:void(0);" class="icon" onclick="expandHamburger()">
+               <i class="fa fa-bars"></i>
+             </a>
+              <div id="navigation-links">
+                <a class="active" href="index.html">Home</a>
+                <a href="portfolio.html">Portfolio</a>
+                  <a href="about.html">About</a>
+              <a target="_blank" href="https://github.com/ganyuke/portfolio-website">GitHub</a>
+           </div>
             </div>
         </header>
         <main>
@@ -32,32 +50,43 @@
             <div style="clear: left;"/>
         </h1>
         <p style="font-size:120%;">Signal is a <strong>free and open-source</strong> end-to-end encrypted instant messaging service available on Android, iOS, and PC and used by journalists and world leaders across the globe, funded <em>not</em> by ads, but by donations to the 501(c)(3) nonprofit Signal Foundation.
-        <hr>    
+        <hr>
         <h2>Here's why:</h2>
         <p>Signal prides itself on being a <i>private</i> competitor to Whatsapp; one of its founders even being Whatsapp's former co-founder.</p>
-        <p>The Signal Protocol has been independently audited by security researchers across the world, passing with flying colors. The app has also been endorsed by the famed (or perhaps notorious) <abbr title="National Security Agency">NSA</abbr> whistleblower himself: <mark>Edward Snowden</mark>.</p>
-        
+        <p>The Signal Protocol has been independently audited by security researchers across the world, passing with flying colors. The app has also been endorsed by the famed (or perhaps notorious) NSA whistleblower himself: Edward Snowden.</p>
+
         <blockquote cite="https://twitter.com/Snowden/status/661313394906161152">"I use Signal every day."<br>- Edward Snowden</blockquote>
-        
+
         <p>In 2016, Open Whisper Systems (OWS), the predecessor to the Signal Foundation, was served a subpoena by a federal grand jury. However, all OWS could produce was the <q>account's creation time and the last time it was online</q>.</p>
         <p>As of January 2021, Signal has been downloaded over 105 million times, boasting 40 million concurrent users.</p>
-        <p><b><a href="https://signal.org/download">Download</a> Signal today!</b><br><small>or <ins>else</ins>...!</small></p>
+        <p><b><a target="_blank" href="https://signal.org/download">Download</a> Signal today!</b><br><small>or <ins>else</ins>...!</small></p>
         <hr>
-            
-        <pre style="text-align:center;"> 
+
+        <pre style="text-align:center;">
 Roses are red,
-            
+
 Violets are blue,
-            
+
 I hate <del>Facebook</del> Meta,
-            
+
 And so should you,
-            
+
 Fin.
-        </pre>  
+        </pre>
         </main>
         <footer>
             <p>© 2022 ganyuke</p>
         </footer>
     </body>
-</html> 
+</html>
+
+<script>
+function expandHamburger() {
+  var x = document.getElementById("navigation-links");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>

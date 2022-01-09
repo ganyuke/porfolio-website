@@ -3,7 +3,6 @@ html {
     background-image: linear-gradient(180deg, pink 59%, #9336b0 100%);
     -webkit-font-smoothing: antialiased;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    
 }
 
 body {
@@ -43,15 +42,10 @@ footer p {
     padding: 32px;
 }
 
-/* Add a black background color to the top navigation */
 .topnav {
   background-color: green;
   overflow: hidden;
-}
-
-/* Style the links inside the navigation bar */
-.topnav {
-    height: 96px;
+  height: 96px;
 }
 
 .topnav a {
@@ -80,7 +74,7 @@ footer p {
 .header {
     color: #f2f2f2;
     transition: all .3s ease-in-out;
-    padding: 20px;;
+    padding: 20px;
 }
 
 .header img {
@@ -101,13 +95,99 @@ footer p {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-    text-decoration-color: rgba(255, 255, 255, 1); 
+    text-decoration-color: rgba(255, 255, 255, 1);
 }
 
 .hoverimage img {
-    transition: all .3s ease-in-out; 
+    transition: all .3s ease-in-out;
 }
 
 .hoverimage img:hover {
-	transform: scale(1.1); 
+	transform: scale(1.1);
+}
+
+[class="mobile-nav"] {
+  display:none;
+}
+
+.mobile-nav #navigation-links {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 20px;
+  }
+  .header img {
+    width: 36px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  body {
+    margin: 0;
+  }
+  [class="topnav"] {
+    display:none;
+  }
+  [class="mobile-nav"] {
+    display:block;
+  }
+  .mobile-nav #navigation-links {
+    padding: 16px 6px;
+    text-align: center;
+    background: #01771e;
+    border-top: solid 1px #2c773f;
+    border-bottom: solid 1px #2c773f;
+  }
+  html {
+    background:black;
+  }
+}
+
+.mobile-nav {
+  background-color: green;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.mobile-nav a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 24px 16px;
+}
+
+.mobile-nav a.active {
+    font-weight: bold;
+}
+
+.mobile-nav h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.icon {
+  right: 0;
+  top:0;
+  position:absolute;
+}
+
+.gallery {
+  line-height: 0;
+  column-count:2;
+  column-gap:5px;
+}
+
+.gallery img {
+  width: 100% !important;
+   height: auto !important;
+   margin-bottom:5px;
+}
+
+@media only screen and (max-width: 400px) {
+  .gallery {
+    column-count:1;
+  }
 }
